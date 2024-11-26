@@ -1,0 +1,68 @@
+/* Reset gaya dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* MEMBUAT LAYOUT BODY MENJADI FLEXBOX */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* membuat elemen utama agar mengambil semua ruang yang tersisa */
+header,section{
+    flex:1;
+}
+header {
+    flex:1;
+    background: #645c5c;
+    color: #fff;
+    padding: 3em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 35px;
+}
+
+nav ul li a {
+    color: #272323be;
+    text-decoration: none;
+}
+
+section {
+    padding: 4em;
+}
+
+#home, #profil, #galeri, #kontak {
+    margin-bottom: 2em;
+}
+
+.gallery {
+    display: flex;
+    gap: 1em;
+}
+
+.gallery img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+/* footer trtap berada di bawah */
+footer {
+    background: #333;
+    color: blue;
+    text-align: center;
+    padding: 1em 0;
+}
